@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_04_23_111907) do
 
   create_table "urls", charset: "utf8mb4", force: :cascade do |t|
-    t.string "link", null: false
+    t.text "link", null: false
     t.string "shortcut", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
