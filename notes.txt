@@ -1,0 +1,15 @@
+* make sure to do the following:
+- install mysql for rails, you can do so by running this command 'sudo apt-get install mysql-server mysql-client libmysqlclient-dev'
+- update the db credentials in config/database.yml
+
+* things I wanted to do (unfortunately due to my limited time I wasn't able to do all of that):
+- use sonarqube to analyze the code and develop a high quality code
+- create unit tests
+- get an instant notification when any error occurs in the system through Slack
+- make the structue of the json response the same for all requests (success and error requests) like the below:
+{
+	"is_success": true|false,
+	"status_code": 200|201|422|500..etc,
+	"message": "success|error",
+	"data|errors": [{}, {}, ...{}] or {}
+}
